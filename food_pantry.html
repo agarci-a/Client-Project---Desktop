@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Food Pantry</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+        <img id ="logo" src="images/block_m-hex.png" alt="UMSI Logo">
+        <nav class="pages">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "food_pantry.html" class="active">Food Pantry</a></li>
+                <li><a href = "cew.html">CEW</a></li>
+                <li><a href = "study_spaces.html">Study Spaces</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">Maize and Blue Cupboard</h1>
+        <!-- Commenting on my citation used for Javascript code in footer-->
+        <!--
+        Title: How to Get the Current Year to Display Dynamic Year in      Copyright using JavaScript
+        Author: CodexWorld 
+        Date: Jul 24, 2023
+        Availability: https://www.graphicsdrawer.com
+        -->
+    </header>
+    <main id="main-content" class="container_2"> 
+    <section id ="offerings">
+    <h2>What's In It?</h2>
+    <figure>
+        <img src="images/cupboard.jpg" alt="Racks of canned food at the food pantry">
+         <figcaption>An inside view of the Food Pantry </figcaption>
+    </figure>
+    <p>The Pantry offers the University community with access to healthy and nourishing food. Whether you are on a financial budget or lack access to transportation to a grocery store, the Pantry is always an option for you. Appointments are needed to shop at the pantry but there is no limit on the food anyone can take. 
+    <p>Some items they provide are:</p>
+    <ul id="items">
+        <li>Produce (Vegetables and Fruit)</li>
+        <li>Dairy</li>
+        <li>Meat</li>
+        <li>Bread</li>
+        <li>Frozen and Shelf-stable Foods</li>
+    </ul>
+    <p>But the Pantry doesn't only offer food, but also:</p>
+    <ul>
+        <li>School Supplies</li>
+        <li>Household Items</li>
+        <li>Kitchen Items</li>
+    </ul>
+    </section>
+    <section id="works"> 
+        <h2>How It Works</h2>
+        <figure>
+        <img src="images/betsy.jpg" alt="The Maize and Blue Cupboard located in the basement of Betsy Barbour">
+        <figcaption>Entrance on Maynard St.</figcaption>
+        </figure>
+        <p>Going at the Pantry works by scheduling an appointment at your desired time of shopping. Please come no earlier than your schedule time and remember to bring your MCard with you at your appointment. </p>
+        <p><a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-10"target="_blank">Schedule an Appointment</a></p>
+        <p>The Pantry is open: <br>
+            Sunday: 2pm-6pm <br>
+            Monday - Thursday: 3pm-7pm <br>
+            Friday: 12pm-7pm
+        </p>
+        <p><b>Address:</b><i> 420 S State St Ann Arbor, MI 48109</i></p>
+        <br>
+        <p>Located in the basement of the Betsy Barbour Residence, please enter via the Maynard entrance only to ensure privacy for residents. Please contact the Pantry if you need ramp or elevator access: <a href="tel:7349362794">(734) 936-2794</a></p></p>
+        <br>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">MSI Academic Advising </a></p>
+        <p>© <span id="year"></span> Ally Garcia</p>
+        <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UMSI Logo" width="300">
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

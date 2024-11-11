@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Best Study Spaces on Campus</title>
+</head>
+
+<body>
+    <header>
+        <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+        <img id ="logo" src="images/block_m-hex.png" alt="UMSI Logo">
+        <nav class="pages">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "food_pantry.html">Food Pantry</a></li>
+                <li><a href = "cew.html">CEW</a></li>
+                <li><a href = "study_spaces.html" class="active">Study Spaces</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">Best Study Spaces on Campus</h1>
+        <!-- Commenting on my citation used for Javascript code in footer-->
+        <!--
+        Title: How to Get the Current Year to Display Dynamic Year in      Copyright using JavaScript
+        Author: CodexWorld 
+        Date: Jul 24, 2023
+        Availability: https://www.graphicsdrawer.com
+        -->
+    </header>
+    
+    <main id="main-content" class="container_4"> 
+        <section id ="union">
+        <p>The University has a great selection of study spot on Central Campus. Whether you pefer studying alone or with friends, or in a quiet environment or in a loud environment, there's always a spot!
+        <h2>Michigan Union</h2>
+        <figure>
+            <img src="images/union.jpg" width="700" alt="Four students study in the Union by Sweetwaters">
+            <figcaption>Students studying by Sweetwaters in the Union</figcaption>
+        </figure>
+        <p>The Union is one of the most popular study spots for students with 4 floors. The basement holds many open study spots and a food court for Panda Express, Subway, and Qdoba. On the 1st floor, it is usually busy, with open seating outside of the Sweetwaters and Panera Bread if you want a quick bite to eat. If you need a super quiet place to get some work done, there is quiet study lounge just for that by the entrance. Many students go to the 2nd floor in the IdeaHub. This room is great if you're studying with a group of people. The 3rd and 4th floors don't offer as many studying spots as many it holds office spaces, but there are a few seats if you like a quieter environment.</p>
+        <p><b>Location:</b> <i>530 S State St, Ann Arbor, MI 48109</i><br>
+        <b>Hours:</b> <br>
+        Monday to Saturday: 7am-12am <br>
+        Sunday: 9am-12am</p>
+    </section>
+
+        <section id="ugli">
+        <h2>Shapiro Library (Ugli)</h2>
+        <figure>
+            <img src="images/ugli.jpg" width="700" alt="Many students study in the 3rd floor of the Ugli">
+            <figcaption>Students studying on the 3rd floor of the Ugli</figcaption>
+        </figure>
+        <p>The Shapiro Library, or more commonly known as the Ugli, is one of the most popular libraries on Central Campus. The Ugli has 4 floors of open study spaces, private rooms, computer labs, and a pleathora of charging spots. With a cafe situated at the entrance, you can grab a coffee or a snack when studying. The first and second floor tends to be busy, but you can usually find an open seat. The third floor is newly renovated and offers many comfortable seating. Make sure to come early as the third floor is the busiest floor and seats fill up very quickly. If you prefer quieter study spots, the 4th floor is for you. </p>
+        <p>Because the Ugli tends to be busy, many students like to reserve a study room. This is particularlly useful during exam season to ensure you have a study spot!</p>
+        <p><b>Location:</b> <i>919 S University Ave, Ann Arbor, MI 48109</i> <br>
+        <b>Hours:</b> Open 24/7 (an MCard is required for access from midnight to 8am)</p>
+    </section>
+    <section id="fish">
+        <h2>The Fishbowl</h2>
+        <figure>
+            <img src="images/fishbowl.jpg" width="700" alt="Open spaces at the Fishbowl">
+            <figcaption>You can always find a seat at the Fishbowl</figcaption>
+        </figure>
+        <p>The Fishbowl is located within Mason Hall. This is a popular destination for students looking to have a late-night study session. During all times of the day, you can usually find a seat to study here. There are computers and chargers at each seat. It is most busy in the late afternoons and evenings as many student come here after class to study individually or with friends. It can get quite loud, so be sure to bring headphones if you prefer a quiet environment.</p>
+        <p><b>Location:</b> <i>419 S State St Mason Hall, Ann Arbor, MI 48109</i><br>
+        <b>Hours:</b> 24/7 (an MCard is required for access from 6pm to 7am)</p>
+    </section>
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">MSI Academic Advising </a></p>
+        <p>© <span id="year"></span> Ally Garcia</p>
+        <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UMSI Logo" width="300">
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CEW</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+        <img id ="logo" src="images/block_m-hex.png" alt="UMSI Logo">
+        <nav class="pages">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "food_pantry.html">Food Pantry</a></li>
+            <li><a href = "cew.html" class="active">CEW</a></li>
+            <li><a href = "study_spaces.html">Study Spaces</a></li>
+        </ul>
+        </nav>
+        <h1 id="title">Center for the Education of Women</h1>
+        <!-- Commenting on my citation used for Javascript code in footer-->
+        <!--
+        Title: How to Get the Current Year to Display Dynamic Year in      Copyright using JavaScript
+        Author: CodexWorld 
+        Date: Jul 24, 2023
+        Availability: https://www.graphicsdrawer.com
+        -->
+    </header>
+    
+    <main id="main-content" class="container_3">  
+    <section id="counselling">  
+    <img id="table" src="images/cew+.jpeg" alt="Five individuals working in a round table inside the CEW+ building">
+    <p>The CEW+ recognizes that being a student is difficult, their services are open to everyone at U-M and in the community to help them overcome those obstacles.</p>
+    <h2>Counselling Services</h2>
+    <p>The CEW+ has a professional and highly trained team of counselors that help indiduvals consider their options, make informed choices, and both define and resolve problems, while focusing on issues of achieving their career goals and balance between school, work, and family. Typical discussions include:</p>
+    <ul>
+        <li>Navigating the University experience</li>
+        <li>Work/Life balance issues</li>
+        <li>Financial aid options</li>
+        <li>Emergency funding for current U-M Ann Arbor students</li>
+    </ul>
+    </section>
+
+    <section id="scholarships">
+    <h2>Funding and Scholarships</h2>
+    <p>The CEW+ recognizes that funding helps break down financial barriers for a variety of life circumstances. They offer  U-M students, staff, faculty, and the community opportunities for scholarships, emergency grants, sponsorships, fellowships, and more. Here's a list of open scholarship opportunities:</p>
+    <ul>
+        <li><a href = "https://www.cew.umich.edu/funding/emergency-funding/"target="_blank">Emergency Funding</a></li>
+        <li><a href="https://www.cew.umich.edu/funding/graduation-grant-program/"target="_blank">Graduation Grant Program</a></li>
+        <li><a href="https://www.cew.umich.edu/funding/twink-frey-visiting-social-activist-program/"target="_blank">Twink Frey Visiting Social Activist Program</a></li>
+    </ul>
+    
+    </section>
+
+    <section id="appointment">
+        <h2>Making an Appointment</h2>
+        <p>Those who are interested in counselling to discuss their financial, academic, or work/life balance challenges can request an appointment.</p>
+        <p><a href="https://app.smartsheet.com/b/form/338d8d3b3dbd4a9e9f2e5921084d401b"target="_blank">CEW+ Counseling Appointment Request</a> 
+        Phone:<a href="tel:7347646360">(734) 764-6360</a>
+        Email:<a href ="mailto:cew.appts@umich.edu?subject=subject text">cew.appts@umich.edu</a>.</p>
+    
+
+    <section id="study">
+        <h2>Student Study Space & Caregiver Room</h2>
+        <p>There is a Student Study Space open during business hours! It's a safe and welcoming place where you can study, network, or just relax. There is also a connected playroom for your children so you can get work done while looking after your kids.
+        </p>
+        <figure>
+            <img src ="images/children-1.png" alt="A playspace for children in the CEW study space and caregiver room">
+            <figcaption>A playroom connected to the study space</figcaption>
+        </figure>
+        <figure>
+            <img src = "images/cew.jpg" alt="Open Study Space located in the CEW Building">
+            <figcaption>An look inside CEW+'s study space</figcaption>
+            </figure>
+    </section>
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">MSI Academic Advising </a></p>
+        <p>© <span id="year"></span> Ally Garcia</p>
+        <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UMSI Logo" width="300">
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+header{
+    text-align: center;
+}
+nav{
+    position: relative;
+    font-size: 110%;
+}
+nav ul li {
+    display: block; 
+    margin: 8px 0;
+}
+.pages{
+    position: relative;
+    top: -30px; 
+    text-align: right;
+    right:0px;
+}
+body{
+    background-color: white;
+}
+header, footer, #main-content{
+    font-family:sans-serif;
+}
+#main-content{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+h1{
+    color: #FFCB05;
+    text-align:center;
+    margin-top: 10%; 
+    margin-bottom: 10%;
+
+}
+footer p{
+    color:white;
+    text-align: center;
+}
+footer{
+    background-color: #00274C;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+nav li{
+    display: block;
+    padding-right:0px;
+}
+nav a{
+    color: white;
+}
+nav a:focus{
+    text-decoration: underline;
+    background-color: #FFCB05;
+}
+nav a.active{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #FFCB05;
+}
+nav a:hover{
+    text-decoration: underline;
+  }
+header{
+    padding-top: 5%;
+    background-color: #00274C;
+}
+#pages{
+    position: absolute;
+     top: -40px;
+     margin-bottom: 0px;
+}
+.skip{
+    position: absolute;
+    top: -40px;
+    left: 100px;
+}
+.skip a:focus{
+    position: absolute;
+    top: 50px;
+    color: #FFCB05;
+        
+}
+#title{
+color: #FFCB05;
+text-align: center;
+margin-right: 20%;
+margin-left: 20%;
+padding-bottom: 10%;
+}
+
+
+h2, h3{
+    text-align: center;
+    color:#00274C;
+}
+
+header img{
+    padding-top: 5%;
+}
+figcaption{
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #FFCB05;
+}
+footer a:visited {
+    color: #FFCB05;            
+}
+main a:visited, main a{
+    color: black;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; 
+    }
+}
+.container, .container_2, .container_3, .container_4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    border-color: #00274C;
+}
+
+#physical, #mental, #life-outside-classroom, #welcome, footer, #offerings, #works, #counselling, #scholarships, #appointment, #study,#union, #ugli, #fish{
+    grid-column: 1/4;
+}
+#logo{
+    position: absolute;
+    top:0px;
+    height: auto;
+    padding-top:8px;
+    margin: 0 auto;
+
+}
+#uhs, #backpack {
+    grid-column: 1 / 4;
+}
+
+body img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+#error, #redirect{
+    text-align: center;
+    color: black;
+}
+#list{
+    text-align: center;
+    list-style: none;
+}
+#list li {
+    display: inline;
+    padding-right: 10px;
+}
+#list a:link {
+    color:#00274C;
+  }
+@media screen and (min-width: 900px){
+    h1{
+        font-size: 250%;
+    }
+    h2{
+        font-size: 175%;
+    }
+    p{
+        font-size: 100%;
+    }
+    #main-content{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 15px;
+        border-color: #00274C;
+    }
+    #welcome{
+        grid-column: 2/5;
+    }
+    #physical{
+        grid-column: 2/5;
+    }
+    #mental{
+        grid-column: 2/5;
+    }
+    #life-outside-classroom{
+        grid-column: 2/5;
+    }
+    #offerings, #works{
+        grid-column: 2/5;
+    }
+    #study, #counselling, #scholarships, #appointment{
+        grid-column: 2/5;
+    }
+    #union, #ugli, #fish{
+        grid-column: 2/5;
+    }
+    .pages{
+        top: -52px;
+        right: 0px;
+    }
+    .pages ul {
+        padding: 0;
+        margin: 0;
+    li{
+        float: right;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    a {
+        display: block;
+        padding: 1rem;
+        margin-right: auto;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: #FFCB05;
+      }
+    a.active{
+        font-weight: bold;
+        text-decoration: underline;
+        color: black;
+        background-color: #FFCB05;
+    }
+    nav.pages{
+        margin-right: 5em;
+    }
+}
+}
